@@ -1,0 +1,144 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/b3ruan/ECE124/Lab4/simulation/qsim
+vLogicalStep_Lab4_top
+Z1 !s110 1742321500
+!i10b 1
+!s100 PUHYL2YJ1EXboZBmKJd6P0
+Ig9jnE6moDQ@TefGW]:i4C1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1742321500
+8LogicalStep_Lab4_top.vo
+FLogicalStep_Lab4_top.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1742321500.000000
+!s107 LogicalStep_Lab4_top.vo|
+!s90 -work|work|LogicalStep_Lab4_top.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@logical@step_@lab4_top
+Elogicalstep_lab4_top
+Z7 w1742855296
+Z8 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z9 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+Z10 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z11 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+Z12 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z15 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+Z16 dC:/Users/b3ruan/ECE124/Lab4sim/simulation/qsim
+Z17 8LogicalStep_Lab4_top.vho
+Z18 FLogicalStep_Lab4_top.vho
+l0
+L36
+VEeI=gOiS]R1GK:aoT:6KT2
+!s100 U:SMjSO[MHHE@Wm79e6^L2
+Z19 OV;C;10.5b;63
+32
+Z20 !s110 1742855297
+!i10b 1
+Z21 !s108 1742855297.000000
+Z22 !s90 -work|work|LogicalStep_Lab4_top.vho|
+Z23 !s107 LogicalStep_Lab4_top.vho|
+!i113 1
+R5
+Z24 tExplicit 1 CvgOpt 0
+Astructure
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+DEx4 work 20 logicalstep_lab4_top 0 22 EeI=gOiS]R1GK:aoT:6KT2
+l249
+L57
+V_Tm5R=UDX7jc0E1R0h_0@0
+!s100 `eUHOn<[PHCc4jodI53MJ0
+R19
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R5
+R24
+Elogicalstep_lab4_top_vhd_vec_tst
+R7
+R13
+R14
+R16
+Z25 8Waveform4.vwf.vht
+Z26 FWaveform4.vwf.vht
+l0
+L31
+VK9oOEMLJ37gJ1:KAQm>3M1
+!s100 @X4ZP>3]PPC6GM;>;02fc3
+R19
+32
+R20
+!i10b 1
+R21
+Z27 !s90 -work|work|Waveform4.vwf.vht|
+Z28 !s107 Waveform4.vwf.vht|
+!i113 1
+R5
+R24
+Alogicalstep_lab4_top_arch
+R13
+R14
+Z29 DEx4 work 32 logicalstep_lab4_top_vhd_vec_tst 0 22 K9oOEMLJ37gJ1:KAQm>3M1
+l72
+L33
+VGSi]8F];TW4iB2B]=`>fL2
+!s100 YeI3O_KoS1fj;50_M[mAh1
+R19
+32
+R20
+!i10b 1
+R21
+R27
+R28
+!i113 1
+R5
+R24
+vLogicalStep_Lab4_top_vlg_vec_tst
+R1
+!i10b 1
+!s100 1OQT0l@2PZ<?Aoc@Ua7620
+IM>kiz8He_4iE:X8H9XPD_0
+R2
+R0
+w1742321499
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R5
+R6
+n@logical@step_@lab4_top_vlg_vec_tst

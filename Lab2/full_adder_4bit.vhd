@@ -1,0 +1,40 @@
+-- Section 205, Team 8, Lab2_REPORT, Bryant Ruan, Jennifer Yu
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity full_adder_4bit is 
+port (
+	BUS0,BUS1										: in std_logic_vector(3 downto 0);  -- vectors containing inputs from switches
+	CARRY_IN								    		: in std_logic;							-- initially '0'
+	CARRY_OUT3										: out std_logic;							-- carry output from final single-bit full adder
+	SUM												: out std_logic_vector(3 downto 0)  -- sum output in hex
+);
+
+end full_adder_4bit;
+
+architecture logic of full_adder_4bit is
+	
+	-- single-bit full adder
+	component full_adder_1bit port (
+		INPUT_B,INPUT_A 						   : in std_logic;
+		CARRY_IN								    	: in std_logic;
+		FULL_ADDER_CARRY_OUTPUT					: out std_logic;
+		FULL_ADDER_SUM_OUTPUT					: out std_logic
+	);
+	end component;
+	
+	
+	-- carry signals between single-bit adders
+	signal CARRY_OUT0, CARRY_OUT1, CARRY_OUT2			: std_logic;
+
+
+begin
+	-- instances of single-bit adders
+	INST1: full_adder_1bit port map(BUS0(0), BUS1(0), CARRY_IN, CARRY_OUT0, SUM(0));
+	INST2: full_adder_1bit port map(BUS0(1), BUS1(1), CARRY_OUT0, CARRY_OUT1, SUM(1));
+	INST3: full_adder_1bit port map(BUS0(2), BUS1(2), CARRY_OUT1, CARRY_OUT2, SUM(2));
+	INST4: full_adder_1bit port map(BUS0(3), BUS1(3), CARRY_OUT2, CARRY_OUT3, SUM(3));
+				  
+end logic;
+	

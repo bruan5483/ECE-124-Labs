@@ -1,0 +1,28 @@
+-- Section 205, Team 8, Lab4_REPORT, Bryant Ruan, Jennifer Yu
+
+-- Import packages
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-- Defines the State_Machine entity, which represents a traffic light through a Moore state machine
+Entity State_Machine IS Port
+(
+	clk_input 	: IN std_logic;  -- Clock input bit
+	reset			: IN std_logic;  -- Reset input bit
+	--sm_clken		: IN std_logic;  -- Enable input bit
+	--blink_sig	: IN std_logic;  -- Blink signal bit
+	--ns_request	: IN std_logic;  -- North/South pedestrian request input bit
+	--ew_request	: IN std_logic;  -- East/West pedestrian request input bit
+	
+	ns_red, ns_amber, ns_green : OUT std_logic; -- North/South ouput bits for red, amber, and green traffic lights
+	ew_red, ew_amber, ew_green : OUT std_logic; -- East/West ouput bits for red, amber, and green traffic lights
+	--ns_crossing : OUT std_logic; -- North/South crossing period output bit
+	--ew_crossing : OTU std_logic; -- East/West crossing period output bit
+	
+	
+
+
+ output1, output2						: OUT std_logic
+ );
+END ENTITY;

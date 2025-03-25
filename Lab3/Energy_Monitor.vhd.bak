@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity Energy_Monitor is port (
+   AGTB,AEQB,ALTB															: in	std_logic;
+   vacation_mode, MC_test_mode, window_open, door_open		: in	std_logic;
+	furnace, at_temp, AC, blower, window, door, vacation  	: out	std_logic;
+	decrease, increase, run												: out	std_logic
+	); 
+end Energy_Monitor;
+
+architecture energy_monitor_ckt of Energy_Monitor is
+
+--signal EQ_PASS, GT_PASS, LT_PASS : std_logic;
+
+begin
+
+Energy_Monitor1: 
+PROCESS (MC_TESTMODE, input1, input2, I1EQI2, I1GTI2, I1LTI2) is
+ 
+begin
+		
+		IF ((input1 = input2) AND (I1EQI2 = '1')) THEN 
+		EQ_PASS <= '1';
+		GT_PASS <= '0'; 
+		LT_PASS <= '0';
+		
+		ELSIF ((input1 > input2) AND (I1GTI2 = '1')) THEN  
+		GT_PASS <= '1';
+		EQ_PASS <= '0'; 
+		LT_PASS <= '0';
+		
+		ELSIF ((input1 < input2) AND (I1LTI2 = '1')) THEN  
+		LT_PASS <= '1';
+		EQ_PASS <= '0'; 
+		GT_PASS <= '0'; 
+		
+		ELSE  
+		
+		EQ_PASS <= '0'; 
+		GT_PASS <= '0'; 
+		LT_PASS <= '0';
+		
+		END IF;
+		TEST_PASS <= MC_TESTMODE AND (EQ_PASS OR GT_PASS OR LT_PASS);
+		
+end process;
+
+end;

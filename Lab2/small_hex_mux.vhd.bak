@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity small_hex_mux is 
+port (
+	hex_num,hex_sum							: in std_logic_vector(3 downto 0);
+	mux_select									: in std_logic;
+	hex_out										: out std_logic_vector(3 downto 0) -- the hex output
+);
+
+end small_hex_mux;
+
+architecture mux_logic of small_hex_mux is
+
+begin
+
+	-- for the multiplexing of two hex input busses
+	with mux_select select
+	hex_out <= hex_num when '0',
+				  hex_sum when '1';
+				  
+	end mux_logic;
+	

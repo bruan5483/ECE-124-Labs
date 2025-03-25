@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clkin_50'
+Slack : -3.606
+TNS   : -102.847
+
+Type  : Slow 1200mV 85C Model Setup 'State_Machine:INSTSM|current_state.S15'
+Slack : -2.528
+TNS   : -2.528
+
+Type  : Slow 1200mV 85C Model Hold 'clkin_50'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'State_Machine:INSTSM|current_state.S15'
+Slack : 2.097
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clkin_50'
+Slack : -3.000
+TNS   : -117.499
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'State_Machine:INSTSM|current_state.S15'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clkin_50'
+Slack : -3.326
+TNS   : -89.437
+
+Type  : Slow 1200mV 0C Model Setup 'State_Machine:INSTSM|current_state.S15'
+Slack : -2.270
+TNS   : -2.270
+
+Type  : Slow 1200mV 0C Model Hold 'clkin_50'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'State_Machine:INSTSM|current_state.S15'
+Slack : 1.938
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clkin_50'
+Slack : -3.000
+TNS   : -117.499
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'State_Machine:INSTSM|current_state.S15'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clkin_50'
+Slack : -0.996
+TNS   : -8.228
+
+Type  : Fast 1200mV 0C Model Setup 'State_Machine:INSTSM|current_state.S15'
+Slack : -0.457
+TNS   : -0.457
+
+Type  : Fast 1200mV 0C Model Hold 'clkin_50'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'State_Machine:INSTSM|current_state.S15'
+Slack : 0.876
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clkin_50'
+Slack : -3.000
+TNS   : -93.149
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'State_Machine:INSTSM|current_state.S15'
+Slack : 0.460
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity full_adder_1bit is 
+port (
+	INPUT_B,INPUT_A 						   : in std_logic_vector(1 downto 0);
+	CARRY_IN								    	: in std_logic_vector(1 downto 0);
+	FULL_ADDER_CARRY_OUTPUT					: out std_logic_vector(1 downto 0)
+	FULL_ADDER_SUM_OUTPUT					: out std_logic_vector(1 downto 0)
+);
+
+end full_adder_1bit;
+
+architecture logic of full_adder_1bit is
+
+	signal HALF_ADDER_CARRY_OUTPUT			: std_logic_vector(1 downto 0);
+	signal HALF_ADDER_SUM_OUTPUT			: std_logic_vector(1 downto 0);
+
+
+begin
+
+	HALF_ADDER_CARRY_OUTPUT <= (INPUT_A AND INPUT_B);
+	HALF_ADDER_SUM_OUTPUT <= (INPUT_A XOR INPUT_B);
+	
+	FULL_ADDER_CARRY_OUTPUT <= (CARRY_IN AND HALF_ADDER_SUM_OUTPUT) OR (HALF_ADDER_CARRY_OUTPUT);
+	FULL_ADDER_SUM_OUTPUT <= HALF_ADDER_SUM_OUTPUT XOR CARRY_IN;
+				  
+	end logic;
+	
